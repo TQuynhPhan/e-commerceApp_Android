@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.GioHangActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarGH"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4399F4"
+        app:title="Giỏ hàng" />
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Không có gì trong giỏ hàng"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnMuaNgay"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:text="Mua ngay"-->
+<!--                    android:textAllCaps="false" />-->
+
+<!--            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtGHTrong"
+                android:gravity="center"
+                android:text="Không có gì trong giỏ hàng"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnMuaNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Mua ngay"
+                android:textAllCaps="false" />
+
+            <ListView
+                android:id="@+id/listViewGH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </FrameLayout>
+
+        <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTongTien"
+            android:text="Tổng tiền: Vui lòng chọn sản phẩm"
+            android:layout_marginTop="200dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMuaHang"
+            android:text="Mua hàng"
+            android:textAllCaps="false"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="200dp"/>
+
+<!--    </ScrollView>-->
+
+
+
+</LinearLayout>

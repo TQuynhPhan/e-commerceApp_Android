@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_marginTop="10dp">
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkGH"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgGH"
+        android:layout_weight="3"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTenGH"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGiaGH"
+            android:textColor="#D30707"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSubtractGH"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="-"/>
+
+            <Button
+                android:id="@+id/btnValueGH"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:background="@null"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAddGH"
+                android:focusable="false"
+                android:text="+"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDelGH"
+                android:text="Xóa"
+                android:textAllCaps="false"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/purple_700"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
